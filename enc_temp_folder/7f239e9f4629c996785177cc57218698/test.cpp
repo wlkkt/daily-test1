@@ -475,51 +475,52 @@
 //}
 
 
-//#include <iostream>
-//using namespace std;
-//
-//class Base
-//{
-//public:
-//    virtual void Func1()
-//    {
-//        cout << "Func1()" << endl;
-//    }
-//
-//    virtual void Func2()
-//    {
-//        cout << "Func1()" << endl;
-//    }
-//
-//    virtual void Func3()
-//    {
-//        cout << "Func1()" << endl;
-//    }
-//
-//private:
-//    int _b = 1;
-//};
-//
-//class Child : public Base
-//{
-//public:
-//    virtual void Func1()
-//    {
-//        cout << "Func1()" << endl;
-//    }
-//
-//   void Func3()
-//    {
-//        cout << "Func1()" << endl;
-//    }
-//private:
-//    int _c = 1;
-//};
-//
-//
-//int main()
-//{
-//    Base b;
-//    Child c;
-//    return 0;
-//}
+
+#include <iostream>
+using namespace std;
+
+class Base
+{
+public:
+    virtual void Func1()
+    {
+        cout << "Func1()" << endl;
+    }
+
+    virtual void Func2()
+    {
+        cout << "Func1()" << endl;
+    }
+
+    virtual void Func3()
+    {
+        cout << "Func1()" << endl;
+    }
+
+private:
+    int _b = 1;
+};
+
+class Child : public Base
+{
+public:
+    virtual void Func1()
+    {
+        cout << "Func1()" << endl;
+    }
+
+   void Func3()
+    {
+        cout << "Func1()" << endl;
+    }
+private:
+    int _c = 1;
+};
+
+
+int main()
+{
+    Base b;
+    Child c;
+    return 0;
+}
